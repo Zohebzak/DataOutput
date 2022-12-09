@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>this is heading</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    
+    <!-- <button onclick="document.getElementById('demo').innerHTML=4+5">click me
+
+    </button> -->
+    <!-- <button onclick="console.log(5+5)">click me
+
+    </button> -->
+    <!-- <button onclick="window.alert(8+8)">click here
+
+    </button> -->
+    <button onclick='myfunction()'>click me to sum a & b </button>
+    <button onclick='myfunction2()'>click 2</button>
+
+    <script>
+        // document.write(5+5)
+    //   window.alert(8+9)
+    function myfunction(){
+        var a,b,c
+        a=5;
+        b=2;
+        c=a+b;
+        console.log("the sum of a+b is",c)
+        document.getElementById('demo').innerHTML=
+        "first nymber is" + a + "<br>second number is"+ b +"<br>sum is"+ c;
+
+    }
+    function myfunction2(){
+        var x,y,z
+        x=10;
+        y=20;
+        z=x+y;
+        console.log("the sum is",z)
+        document.getElementById("demo2").innerHTML="The sum is "+z
+    }
+
+    </script>
+</body>
+</html>
